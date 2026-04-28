@@ -23,41 +23,47 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function TutorsPage() {
-  const tutorImage = PlaceHolderImages.find(img => img.id === 'hero-tutor')?.imageUrl || "https://picsum.photos/seed/math-tutor/600/800";
+  const tutorImage = PlaceHolderImages.find(img => img.id === 'hero-tutor')?.imageUrl || "/fototutor.jpg";
 
   const profile = {
-    name: "Arya Wijaya, S.Si.",
-    title: "Lead Mathematics Tutor & Curriculum Designer",
+    name: "Muhammad Wafiq Afansa, S.Mat.",
+    title: "Lead Mathematics Tutor",
     location: "Banda Aceh, Indonesia",
-    email: "arya@levelup.id",
+    email: "afansa27@gmail.com",
     phone: "082369290805",
-    summary: "Seorang pengajar matematika yang berdedikasi dengan pengalaman lebih dari 5 tahun dalam membimbing siswa tingkat SMP, SMA, dan persiapan masuk Perguruan Tinggi Negeri. Spesialis dalam mengajar murid-murid dari sekolah unggulan dengan pendekatan logika yang kuat.",
+    summary: "Seorang pengajar matematika yang berdedikasi dengan pengalaman lebih dari 5 tahun dalam membimbing siswa tingkat SD, SMP, SMA, dan persiapan masuk Perguruan Tinggi Negeri. Spesialis dalam mengajar murid-murid dari sekolah unggulan dengan pendekatan logika yang kuat.",
     education: [
       {
-        degree: "Sarjana Sains (S.Si.) Matematika",
+        degree: "Sarjana Matematika",
         institution: "Universitas Syiah Kuala",
-        year: "2015 - 2019",
+        year: "2018 - 2023",
         description: "Lulusan FMIPA Matematika Universitas Syiah Kuala. Fokus pada pemahaman konsep mendalam dan analisis matematika."
       }
     ],
     experience: [
       {
         role: "Lead Tutor",
-        company: "Level Up",
-        year: "2020 - Sekarang",
-        description: "Mengembangkan kurikulum belajar mandiri dan mengajar lebih dari 500 siswa secara online maupun offline."
+        company: "Level Up Privat",
+        year: "2024 - Sekarang",
+        description: "Mengembangkan kurikulum belajar mandiri dan mengajar secara online maupun offline."
       },
       {
         role: "Senior Math Instructor",
         company: "Bimbel Terkemuka & Private Sekolah Unggulan",
-        year: "2019 - 2020",
-        description: "Bertanggung jawab atas kelas persiapan UTBK dan olimpiade bagi siswa-siswa berprestasi dari sekolah unggulan."
+        year: "2019 - 2026",
+        description: "Bertanggung jawab atas kelas dari SD hingga persiapan UTBK dan olimpiade bagi siswa-siswa berprestasi dari sekolah unggulan."
       },
       {
         role: "Asisten Dosen / Tutor Sebaya",
         company: "FMIPA Universitas Syiah Kuala",
-        year: "2017 - 2019",
-        description: "Membantu menjelaskan konsep kalkulus dan aljabar linear kepada rekan mahasiswa di lingkungan kampus."
+        year: "2019 - 2021",
+        description: "Menjadi asisten lab Numerik dan Etnomatematika di lingkungan kampus."
+      },
+      {
+        role : "Pembina Pramuka",
+        company : "MTsN Model Banda Aceh",
+        year : "2019 - 2023",
+        description : "Mendidik serta membina peserta didik dengan nilai nilai pramuka seperti Tri Satya dan Dasa Darma",
       }
     ],
     skills: [
@@ -66,12 +72,12 @@ export default function TutorsPage() {
       "Geometri Analitik",
       "Trigonometri",
       "Persiapan UTBK/SBMPTN",
-      "Kurikulum Sekolah Unggulan"
+      "Matlab"
     ],
     certifications: [
-      "Certified Professional Teacher - Math Specialist",
-      "Outstanding Instructor Award 2022",
-      "Advanced Teaching Methodology - Pedagogy Expert"
+      "Excel Skill for Business at Macquarie University Australia 2023",
+      "Linear Algebra for Machine Learning and Data Science at DeepLearning AI 2023",
+      "Database and SQL for Data Science with Pyhton 2024"
     ]
   };
 

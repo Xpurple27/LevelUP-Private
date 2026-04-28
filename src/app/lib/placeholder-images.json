@@ -4,13 +4,13 @@
     {
       "id": "site-logo",
       "description": "Logo Level Up (Ganti ke /nama-file.png jika sudah upload ke folder public)",
-      "imageUrl": "https://drive.google.com/uc?export=view&id=1sc8uO826RMbXaHYjtpD7jrxXXTwoDPnQ",
+      "imageUrl": "/Levelupnewlogo.jpeg",
       "imageHint": "company logo"
     },
     {
       "id": "hero-tutor",
       "description": "Professional math tutor smiling",
-      "imageUrl": "https://picsum.photos/seed/math-tutor/600/800",
+      "imageUrl": "/fototutor.jpg",
       "imageHint": "tutor teacher"
     },
     {
