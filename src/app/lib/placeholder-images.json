@@ -1,0 +1,47 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-tutor",
+      "description": "Professional math tutor smiling",
+      "imageUrl": "https://picsum.photos/seed/math-tutor/600/800",
+      "imageHint": "tutor teacher"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Tutoring session in progress",
+      "imageUrl": "https://picsum.photos/seed/session1/800/600",
+      "imageHint": "teaching classroom"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Online math teaching setup",
+      "imageUrl": "https://picsum.photos/seed/online/800/600",
+      "imageHint": "laptop education"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Handwritten math formulas on a whiteboard",
+      "imageUrl": "https://picsum.photos/seed/formulas/800/600",
+      "imageHint": "mathematics blackboard"
+    },
+    {
+      "id": "avatar-1",
+      "description": "Student testimonial avatar",
+      "imageUrl": "https://picsum.photos/seed/student1/100/100",
+      "imageHint": "student person"
+    },
+    {
+      "id": "avatar-2",
+      "description": "Student testimonial avatar",
+      "imageUrl": "https://picsum.photos/seed/student2/100/100",
+      "imageHint": "student person"
+    },
+    {
+      "id": "avatar-3",
+      "description": "Student testimonial avatar",
+      "imageUrl": "https://picsum.photos/seed/student3/100/100",
+      "imageHint": "student person"
+    }
+  ]
+}
