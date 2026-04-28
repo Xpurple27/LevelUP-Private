@@ -63,7 +63,7 @@ export function Advantages() {
                 <p className="text-sm">Gunakan foto interaksi nyata antara tutor dan siswa yang sedang berdiskusi dengan antusias di depan papan tulis atau meja belajar.</p>
               </div>
             </div>
-            <div className="absolute top-10 -right-8 bg-primary text-white p-6 rounded-2xl shadow-xl animate-bounce duration-[3000ms]">
+            <div className="absolute top-10 -right-8 bg-primary text-white p-6 rounded-2xl shadow-xl animate-bounce [animation-duration:3s]">
               <p className="text-xs uppercase font-bold tracking-widest mb-1">Success Rate</p>
               <p className="text-4xl font-extrabold">98%</p>
             </div>
