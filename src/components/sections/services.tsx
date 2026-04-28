@@ -39,7 +39,7 @@ export function Services() {
             </div>
             <div className="flex items-center gap-2 text-sm font-medium bg-white px-4 py-2 rounded-full shadow-sm">
               <MapPin className="h-4 w-4 text-primary" />
-              Banda Aceh
+              Kelas Offline (Banda Aceh)
             </div>
           </div>
         </div>
