@@ -1,7 +1,9 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { GraduationCap, BookOpen, UserCheck, Heart } from 'lucide-react';
+import { GraduationCap, BookOpen, UserCheck, Heart, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export function About() {
   const experiences = [
@@ -38,7 +40,7 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {experiences.map((item, idx) => (
             <Card key={idx} className="border-none bg-background shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="pt-8 text-center flex flex-col items-center">
@@ -54,16 +56,23 @@ export function About() {
           ))}
         </div>
 
-        <div className="mt-16 p-8 rounded-3xl bg-primary text-white flex flex-col md:flex-row items-center gap-8 shadow-xl">
-          <div className="flex-1">
-            <h3 className="text-2xl font-bold mb-4">"Semua orang bisa matematika, asal tahu pintunya."</h3>
-            <p className="text-primary-foreground/90">
-              Saya percaya bahwa kesulitan belajar matematika seringkali bukan karena kurangnya kemampuan, melainkan karena cara penyampaian yang terlalu abstrak. Di Math Spark, saya menjembatani konsep sulit menjadi bahasa yang mudah dicerna.
+        <div className="p-8 md:p-12 rounded-3xl bg-primary text-white flex flex-col md:flex-row items-center gap-8 shadow-xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+          <div className="flex-1 relative z-10">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">"Semua orang bisa matematika, asal tahu pintunya."</h3>
+            <p className="text-primary-foreground/90 mb-8 text-lg">
+              Saya percaya bahwa kesulitan belajar matematika seringkali bukan karena kurangnya kemampuan, melainkan karena cara penyampaian yang terlalu abstrak.
             </p>
+            <Button asChild variant="secondary" className="rounded-full px-8 py-6 text-primary font-bold hover:bg-white group">
+              <Link href="/tutors">
+                Kenali Saya Lebih Dalam
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </Button>
           </div>
-          <div className="bg-white/20 px-8 py-4 rounded-2xl backdrop-blur-sm text-center">
-            <p className="text-3xl font-bold">100%</p>
-            <p className="text-sm font-medium">Dedikasi untuk Siswa</p>
+          <div className="bg-white/20 px-10 py-6 rounded-2xl backdrop-blur-sm text-center relative z-10 border border-white/20">
+            <p className="text-4xl font-extrabold mb-1">100%</p>
+            <p className="text-xs font-bold uppercase tracking-widest">Dedikasi Siswa</p>
           </div>
         </div>
       </div>
