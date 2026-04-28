@@ -6,10 +6,12 @@ import Link from 'next/link';
 import { Menu, X, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { usePathname } from 'next/navigation';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,18 +22,18 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Tentang', href: '#about' },
-    { name: 'Layanan', href: '#services' },
-    { name: 'Testimoni', href: '#testimonials' },
-    { name: 'Biaya', href: '#pricing' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Tentang', href: pathname === '/' ? '#about' : '/#about' },
+    { name: 'Layanan', href: pathname === '/' ? '#services' : '/#services' },
+    { name: 'Tim Pengajar', href: '/tutors' },
+    { name: 'Biaya', href: pathname === '/' ? '#pricing' : '/#pricing' },
+    { name: 'FAQ', href: pathname === '/' ? '#faq' : '/#faq' },
   ];
 
   return (
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
-        scrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+        scrolled || pathname !== '/' ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -39,7 +41,10 @@ export function Navbar() {
           <div className="bg-primary p-2 rounded-lg">
             <Zap className="h-6 w-6 text-white" />
           </div>
-          <span className="text-xl font-bold font-headline tracking-tight">
+          <span className={cn(
+            "text-xl font-bold font-headline tracking-tight",
+            scrolled || pathname !== '/' ? "text-slate-900" : "text-slate-900"
+          )}>
             Math<span className="text-primary">Spark</span>
           </span>
         </Link>
@@ -50,13 +55,16 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary",
+                pathname === link.href ? "text-primary" : "text-slate-600"
+              )}
             >
               {link.name}
             </Link>
           ))}
           <Button asChild className="rounded-full px-6">
-            <Link href="#contact">Daftar Sekarang</Link>
+            <Link href={pathname === '/' ? '#contact' : '/#contact'}>Daftar Sekarang</Link>
           </Button>
         </div>
 
@@ -77,14 +85,17 @@ export function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-lg font-medium py-2 border-b border-border"
+                className={cn(
+                  "text-lg font-medium py-2 border-b border-border",
+                  pathname === link.href ? "text-primary" : "text-slate-900"
+                )}
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
             <Button asChild className="w-full rounded-full" onClick={() => setIsOpen(false)}>
-              <Link href="#contact">Daftar Sekarang</Link>
+              <Link href={pathname === '/' ? '#contact' : '/#contact'}>Daftar Sekarang</Link>
             </Button>
           </div>
         </div>
