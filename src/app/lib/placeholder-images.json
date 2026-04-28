@@ -9,21 +9,45 @@
     },
     {
       "id": "gallery-1",
-      "description": "Tutoring session in progress",
+      "description": "Sesi belajar tatap muka",
       "imageUrl": "https://picsum.photos/seed/session1/800/600",
       "imageHint": "teaching classroom"
     },
     {
       "id": "gallery-2",
-      "description": "Online math teaching setup",
+      "description": "Setup belajar online interaktif",
       "imageUrl": "https://picsum.photos/seed/online/800/600",
       "imageHint": "laptop education"
     },
     {
       "id": "gallery-3",
-      "description": "Handwritten math formulas on a whiteboard",
+      "description": "Pengerjaan soal di whiteboard",
       "imageUrl": "https://picsum.photos/seed/formulas/800/600",
       "imageHint": "mathematics blackboard"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Siswa fokus mengerjakan latihan",
+      "imageUrl": "https://picsum.photos/seed/student-solve/800/600",
+      "imageHint": "student working"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Diskusi kelompok kecil yang seru",
+      "imageUrl": "https://picsum.photos/seed/group-study/800/600",
+      "imageHint": "students group"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Tutor menjelaskan konsep sulit",
+      "imageUrl": "https://picsum.photos/seed/tutor-explain/800/600",
+      "imageHint": "teacher whiteboard"
+    },
+    {
+      "id": "gallery-7",
+      "description": "Dokumentasi keberhasilan siswa",
+      "imageUrl": "https://picsum.photos/seed/certificate/800/600",
+      "imageHint": "academic success"
     },
     {
       "id": "avatar-1",
