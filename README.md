@@ -3,16 +3,15 @@
 Bimbingan belajar matematika private yang fokus pada pemahaman konsep dan kenaikan nilai yang signifikan.
 
 ## 📁 Struktur Folder Utama
-- **`/public`**: (Lokasi di sini!) Tempat menyimpan logo, foto, dan aset gambar lokal.
+- **`/public`**: Tempat menyimpan logo, foto, dan aset gambar lokal. (Buat folder ini di root jika belum ada).
 - **`/src/app`**: Berisi halaman website dan routing.
 - **`/src/components`**: Berisi komponen UI (Navbar, Hero, Section, dll).
 - **`package.json`**: Pengaturan proyek dan dependensi.
 
-## 🖼️ Cara Menggunakan Foto Lokal
-Jika Anda ingin menggunakan foto sendiri tanpa URL internet:
-1. Unggah file gambar Anda ke folder **`public/`**.
-2. Buka file `src/app/lib/placeholder-images.json`.
-3. Ganti `imageUrl` menjadi path file tersebut, diawali dengan garis miring. 
+## 🖼️ Cara Menggunakan Foto Lokal (Upload Manual)
+1. **Upload File**: Seret (drag) file gambar dari komputer Anda ke folder **`public/`** di panel file sebelah kiri.
+2. **Konfigurasi**: Buka file `src/app/lib/placeholder-images.json`.
+3. **Update Path**: Ganti `imageUrl` menjadi path file tersebut, diawali dengan garis miring. 
    - Contoh: Jika foto ada di `public/logo-saya.png`, maka isi `imageUrl` dengan `"/logo-saya.png"`.
 
 ## 🚀 Cara Pengembangan Secara Lokal
