@@ -32,7 +32,7 @@ export function Hero() {
               <a href="#contact">Daftar Sekarang</a>
             </Button>
             <Button variant="outline" size="lg" className="rounded-full px-8 text-lg w-full sm:w-auto" asChild>
-              <a href="https://wa.me/6282369290805" target="_blank">Konsultasi Gratis</a>
+              <a href="https://wa.me/6282369290805" target="_blank" rel="noopener noreferrer">Konsultasi Gratis</a>
             </Button>
           </div>
 
@@ -67,7 +67,6 @@ export function Hero() {
               <p className="text-white/80 text-sm">Gunakan foto tutor profesional yang sedang tersenyum ramah menghadap kamera. Pastikan pencahayaan terang dan latar belakang bersih.</p>
             </div>
           </div>
-          {/* Badge */}
           <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-left-6 bg-white p-4 md:p-6 rounded-2xl shadow-xl border border-border flex items-center gap-3 md:gap-4 max-w-[200px] md:max-w-[240px]">
             <div className="bg-primary/10 p-2 md:p-3 rounded-full shrink-0">
               <Zap className="h-5 w-5 md:h-6 md:w-6 text-primary" />

@@ -79,7 +79,7 @@ export function Pricing() {
                   "w-full rounded-full py-6 text-md font-bold transition-all",
                   pkg.isPopular ? "bg-primary text-white shadow-lg hover:shadow-primary/20" : "bg-white border-primary border-2 text-primary hover:bg-primary/5"
                 )} asChild>
-                  <a href={`https://wa.me/6282369290805?text=Halo%20LevelUp,%20saya%20ingin%20daftar%20paket%20${pkg.name}`}>
+                  <a href={`https://wa.me/6282369290805?text=Halo%20LevelUp,%20saya%20ingin%20daftar%20paket%20${pkg.name}`} target="_blank" rel="noopener noreferrer">
                     Pilih Paket Ini
                   </a>
                 </Button>

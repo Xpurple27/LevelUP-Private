@@ -25,7 +25,7 @@ export default function TutorsPage() {
     title: "Lead Mathematics Tutor & Curriculum Designer",
     location: "Jakarta, Indonesia",
     email: "arya@levelup.id",
-    phone: "+62 823-6929-0805",
+    phone: "082369290805",
     summary: "Seorang pengajar matematika yang berdedikasi dengan pengalaman lebih dari 5 tahun dalam membimbing siswa tingkat SMP, SMA, dan persiapan masuk Perguruan Tinggi Negeri. Spesialis dalam penyederhanaan konsep kalkulus dan aljabar melalui metode visual dan logika terapan.",
     education: [
       {
@@ -75,7 +75,6 @@ export default function TutorsPage() {
       <Navbar />
       <main className="flex-grow pt-24 md:pt-32 pb-16 md:pb-24 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
-          {/* Header Card */}
           <Card className="border-none shadow-xl overflow-hidden rounded-[2rem] bg-white mb-8">
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="relative aspect-[4/5] md:aspect-auto">
@@ -112,7 +111,7 @@ export default function TutorsPage() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild className="rounded-full px-8 bg-primary hover:bg-primary/90 w-full sm:w-auto">
-                    <a href="https://wa.me/6282369290805">Pesan Sesi Belajar</a>
+                    <a href="https://wa.me/6282369290805" target="_blank" rel="noopener noreferrer">Pesan Sesi Belajar</a>
                   </Button>
                   <Button variant="outline" className="rounded-full px-8 border-primary text-primary w-full sm:w-auto">Download Portfolio</Button>
                 </div>
@@ -121,7 +120,6 @@ export default function TutorsPage() {
           </Card>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Left Column: Summary & Skills */}
             <div className="lg:col-span-1 space-y-8">
               <Card className="border-none shadow-lg rounded-[2rem] bg-white p-6 sm:p-8">
                 <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
@@ -165,7 +163,6 @@ export default function TutorsPage() {
               </Card>
             </div>
 
-            {/* Right Column: Experience & Education */}
             <div className="lg:col-span-2 space-y-8">
               <Card className="border-none shadow-lg rounded-[2rem] bg-white p-6 sm:p-10 lg:p-12">
                 <h3 className="text-2xl font-bold mb-10 flex items-center gap-3">

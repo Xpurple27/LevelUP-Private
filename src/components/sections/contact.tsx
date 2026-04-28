@@ -24,13 +24,13 @@ export function Contact() {
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button size="lg" className="rounded-full px-10 py-7 text-lg group bg-primary hover:bg-primary/90" asChild>
-                <a href="https://wa.me/6282369290805">
+                <a href="https://wa.me/6282369290805" target="_blank" rel="noopener noreferrer">
                   Daftar Sekarang
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="rounded-full px-10 py-7 text-lg border-2 border-primary text-primary hover:bg-primary/5" asChild>
-                <a href="https://wa.me/6282369290805?text=Halo%20LevelUp,%20saya%20mau%20konsultasi%20dulu">
+                <a href="https://wa.me/6282369290805?text=Halo%20LevelUp,%20saya%20mau%20konsultasi%20dulu" target="_blank" rel="noopener noreferrer">
                   Chat WhatsApp
                 </a>
               </Button>
@@ -59,7 +59,6 @@ export function Contact() {
               className="absolute inset-0 w-full h-full object-cover"
               data-ai-hint="happy student"
             />
-            {/* Photo Guide Overlay */}
             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-8 text-center text-white z-20">
               <ImageIcon className="h-10 w-10 mb-4 text-primary" />
               <p className="font-bold text-lg mb-2">Rekomendasi Foto</p>
