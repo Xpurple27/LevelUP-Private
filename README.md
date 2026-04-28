@@ -23,31 +23,27 @@ Jika Anda menggunakan Firebase Studio dan ingin menghubungkannya ke repositori G
    ```
 
 2. **Hubungkan ke Repository**:
-   ```bash
-   git remote add origin https://github.com/Xpurple27/LevelUP-Private.git
-   ```
+   Jika muncul error `remote origin already exists`, gunakan perintah `set-url` di langkah ke-3.
 
-3. **Simpan Perubahan (Stage & Commit)**:
+3. **Update URL dengan Token**: 
+   Masuk ke GitHub Settings > Developer Settings > Personal Access Tokens (classic). Buat token dengan akses 'repo'. Lalu jalankan:
+   
+   `git remote set-url origin https://TOKEN_ANDA@github.com/Xpurple27/LevelUP-Private.git`
+
+4. **Simpan Perubahan (Stage & Commit)**:
    ```bash
    git add .
    git commit -m "Update: Deskripsi perubahan Anda"
    ```
 
-4. **Kirim ke Git (Push)**:
+5. **Kirim ke Git (Push)**:
    ```bash
    git push -u origin main
    ```
 
-### Troubleshooting: Authentication Failed / Invalid Token
-Jika muncul error `Authentication failed`, itu karena GitHub meminta **Personal Access Token (PAT)**.
-
-1. **Buat Token**: Masuk ke GitHub Settings > Developer Settings > Personal Access Tokens (classic).
-2. **Pilih Scope**: Centang bagian **'repo'**.
-3. **Update URL**: Jalankan perintah ini di terminal (Ganti `TOKEN_ANDA` dengan token asli Anda):
-   
-   `git remote set-url origin https://TOKEN_ANDA@github.com/Xpurple27/LevelUP-Private.git`
-
-4. **Push Ulang**: Jalankan `git push -u origin main` kembali.
+### Troubleshooting: Remote Origin Already Exists
+Jika Anda melihat pesan ini, berarti remote sudah terkonfigurasi. Jangan gunakan `git remote add`, tapi gunakan:
+`git remote set-url origin https://TOKEN_ANDA@github.com/Xpurple27/LevelUP-Private.git`
 
 ---
 © 2024 Level Up. All rights reserved.
