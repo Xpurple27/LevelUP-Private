@@ -25,7 +25,7 @@ export default function TutorsPage() {
     title: "Lead Mathematics Tutor & Curriculum Designer",
     location: "Jakarta, Indonesia",
     email: "arya@levelup.id",
-    phone: "+62 812-3456-789",
+    phone: "+62 823-6929-0805",
     summary: "Seorang pengajar matematika yang berdedikasi dengan pengalaman lebih dari 5 tahun dalam membimbing siswa tingkat SMP, SMA, dan persiapan masuk Perguruan Tinggi Negeri. Spesialis dalam penyederhanaan konsep kalkulus dan aljabar melalui metode visual dan logika terapan.",
     education: [
       {
@@ -112,7 +112,7 @@ export default function TutorsPage() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild className="rounded-full px-8 bg-primary hover:bg-primary/90 w-full sm:w-auto">
-                    <a href="https://wa.me/628123456789">Pesan Sesi Belajar</a>
+                    <a href="https://wa.me/6282369290805">Pesan Sesi Belajar</a>
                   </Button>
                   <Button variant="outline" className="rounded-full px-8 border-primary text-primary w-full sm:w-auto">Download Portfolio</Button>
                 </div>

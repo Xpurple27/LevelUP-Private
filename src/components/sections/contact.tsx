@@ -24,13 +24,13 @@ export function Contact() {
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button size="lg" className="rounded-full px-10 py-7 text-lg group bg-primary hover:bg-primary/90" asChild>
-                <a href="https://wa.me/628123456789">
+                <a href="https://wa.me/6282369290805">
                   Daftar Sekarang
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="rounded-full px-10 py-7 text-lg border-2 border-primary text-primary hover:bg-primary/5" asChild>
-                <a href="https://wa.me/628123456789?text=Halo%20LevelUp,%20saya%20mau%20konsultasi%20dulu">
+                <a href="https://wa.me/6282369290805?text=Halo%20LevelUp,%20saya%20mau%20konsultasi%20dulu">
                   Chat WhatsApp
                 </a>
               </Button>

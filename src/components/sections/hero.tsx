@@ -32,7 +32,7 @@ export function Hero() {
               <a href="#contact">Daftar Sekarang</a>
             </Button>
             <Button variant="outline" size="lg" className="rounded-full px-8 text-lg w-full sm:w-auto" asChild>
-              <a href="https://wa.me/628123456789" target="_blank">Konsultasi Gratis</a>
+              <a href="https://wa.me/6282369290805" target="_blank">Konsultasi Gratis</a>
             </Button>
           </div>
 
