@@ -26,13 +26,13 @@ export default function TutorsPage() {
     location: "Jakarta, Indonesia",
     email: "arya@levelup.id",
     phone: "082369290805",
-    summary: "Seorang pengajar matematika yang berdedikasi dengan pengalaman lebih dari 5 tahun dalam membimbing siswa tingkat SMP, SMA, dan persiapan masuk Perguruan Tinggi Negeri. Spesialis dalam penyederhanaan konsep kalkulus dan aljabar melalui metode visual dan logika terapan.",
+    summary: "Seorang pengajar matematika yang berdedikasi dengan pengalaman lebih dari 5 tahun dalam membimbing siswa tingkat SMP, SMA, dan persiapan masuk Perguruan Tinggi Negeri. Spesialis dalam mengajar murid-murid dari sekolah unggulan dengan pendekatan logika yang kuat.",
     education: [
       {
         degree: "Sarjana Sains (S.Si.) Matematika",
-        institution: "Universitas Indonesia",
+        institution: "Universitas Syiah Kuala",
         year: "2015 - 2019",
-        description: "Lulus dengan predikat Cum Laude. Fokus pada Matematika Terapan dan Komputasi."
+        description: "Lulusan FMIPA USK. Fokus pada pemahaman konsep mendalam dan analisis matematika."
       }
     ],
     experience: [
@@ -44,15 +44,15 @@ export default function TutorsPage() {
       },
       {
         role: "Senior Math Instructor",
-        company: "Bimbel Terkemuka Nasional",
+        company: "Bimbel Terkemuka & Private Sekolah Unggulan",
         year: "2019 - 2020",
-        description: "Bertanggung jawab atas kelas persiapan UTBK khusus bidang studi Matematika IPA."
+        description: "Bertanggung jawab atas kelas persiapan UTBK dan olimpiade bagi siswa-siswa berprestasi dari sekolah unggulan."
       },
       {
-        role: "Asisten Dosen Kalkulus",
-        company: "Departemen Matematika UI",
+        role: "Asisten Dosen / Tutor Sebaya",
+        company: "FMIPA Universitas Syiah Kuala",
         year: "2017 - 2019",
-        description: "Membimbing mahasiswa tingkat pertama dalam memahami konsep dasar kalkulus dan analisis real."
+        description: "Membantu menjelaskan konsep kalkulus dan aljabar linear kepada rekan mahasiswa di lingkungan kampus."
       }
     ],
     skills: [
@@ -61,12 +61,12 @@ export default function TutorsPage() {
       "Geometri Analitik",
       "Trigonometri",
       "Persiapan UTBK/SBMPTN",
-      "Olimpiade Matematika (OSN)"
+      "Kurikulum Sekolah Unggulan"
     ],
     certifications: [
-      "Certified Professional Teacher - Kemendikbud",
+      "Certified Professional Teacher - Math Specialist",
       "Outstanding Instructor Award 2022",
-      "Advanced Statistics Certification - Coursera"
+      "Advanced Teaching Methodology - Pedagogy Expert"
     ]
   };
 
@@ -86,7 +86,7 @@ export default function TutorsPage() {
                 />
               </div>
               <div className="md:col-span-2 p-6 sm:p-8 lg:p-12 flex flex-col justify-center">
-                <Badge className="w-fit mb-4 bg-primary/10 text-primary border-none py-1 px-3">Available for Private Classes</Badge>
+                <Badge className="w-fit mb-4 bg-primary/10 text-primary border-none py-1 px-3 text-xs">Available for Private Classes</Badge>
                 <h1 className="text-3xl sm:text-4xl font-extrabold mb-2 text-slate-900 leading-tight">{profile.name}</h1>
                 <p className="text-lg sm:text-xl text-primary font-semibold mb-6">{profile.title}</p>
                 

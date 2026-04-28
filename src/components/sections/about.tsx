@@ -10,22 +10,22 @@ export function About() {
     {
       icon: <GraduationCap className="h-6 w-6 text-primary" />,
       title: "Latar Belakang",
-      desc: "Lulusan Matematika Murni dari Universitas Terkemuka dengan predikat Cum Laude."
+      desc: "Lulusan Matematika FMIPA Universitas Syiah Kuala dengan pemahaman konsep yang kuat."
     },
     {
       icon: <BookOpen className="h-6 w-6 text-primary" />,
       title: "Pengalaman Mengajar",
-      desc: "5+ Tahun pengalaman di Bimbel ternama & Asisten Laboratorium Komputasi."
+      desc: "5+ Tahun pengalaman mengajar di Bimbel ternama dan privat siswa sekolah unggulan."
     },
     {
       icon: <UserCheck className="h-6 w-6 text-primary" />,
       title: "Pendekatan Personal",
-      desc: "Menganalisis gaya belajar tiap siswa untuk materi yang disesuaikan."
+      desc: "Menganalisis gaya belajar tiap siswa untuk materi yang disesuaikan secara intensif."
     },
     {
       icon: <Heart className="h-6 w-6 text-primary" />,
       title: "Filosofi Mengajar",
-      desc: "Matematika bukan hafalan rumus, tapi logika berpikir yang menyenangkan."
+      desc: "Matematika bukan hafalan rumus, tapi logika berpikir yang menyenangkan dan aplikatif."
     }
   ];
 
@@ -36,7 +36,7 @@ export function About() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-headline uppercase tracking-wide">Profil Tutor</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground">
-            Kenali lebih dekat sosok yang akan membimbingmu menaklukkan tantangan matematika.
+            Kenali lebih dekat sosok yang akan membimbingmu menaklukkan tantangan matematika dengan metode yang telah teruji.
           </p>
         </div>
 
