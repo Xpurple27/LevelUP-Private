@@ -1,4 +1,6 @@
 
+'use client';
+
 import React from 'react';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/sections/footer';
@@ -18,8 +20,11 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function TutorsPage() {
+  const tutorImage = PlaceHolderImages.find(img => img.id === 'hero-tutor')?.imageUrl || "https://picsum.photos/seed/math-tutor/600/800";
+
   const profile = {
     name: "Arya Wijaya, S.Si.",
     title: "Lead Mathematics Tutor & Curriculum Designer",
@@ -32,7 +37,7 @@ export default function TutorsPage() {
         degree: "Sarjana Sains (S.Si.) Matematika",
         institution: "Universitas Syiah Kuala",
         year: "2015 - 2019",
-        description: "Lulusan FMIPA USK. Fokus pada pemahaman konsep mendalam dan analisis matematika."
+        description: "Lulusan FMIPA Matematika Universitas Syiah Kuala. Fokus pada pemahaman konsep mendalam dan analisis matematika."
       }
     ],
     experience: [
@@ -79,7 +84,7 @@ export default function TutorsPage() {
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="relative aspect-[4/5] md:aspect-auto">
                 <Image 
-                  src="https://picsum.photos/seed/math-tutor/600/800" 
+                  src={tutorImage} 
                   alt={profile.name}
                   fill
                   className="object-cover"
