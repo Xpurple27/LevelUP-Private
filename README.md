@@ -9,41 +9,29 @@ Bimbingan belajar matematika private yang fokus pada pemahaman konsep dan kenaik
 - **Lucide Icons**
 - **Firebase** (Siap integrasi)
 
+## Cara Menggunakan Foto Lokal
+Jika Anda ingin menggunakan foto sendiri tanpa URL internet:
+1. Unggah file gambar Anda ke folder **`public/`** di proyek ini.
+2. Buka file `src/app/lib/placeholder-images.json`.
+3. Ganti `imageUrl` menjadi path file tersebut, diawali dengan garis miring. 
+   - Contoh: Jika foto ada di `public/logo-saya.png`, maka isi `imageUrl` dengan `"/logo-saya.png"`.
+
 ## Cara Mengembangkan Secara Lokal
 1. Jalankan `npm install`
 2. Jalankan `npm run dev`
 3. Buka `http://localhost:9002`
 
 ## Cara Push ke Git & Deploy (Vercel/GitHub)
-Jika Anda menggunakan Firebase Studio dan ingin menghubungkannya ke repositori Git Anda:
-
-1. **Inisialisasi Git**:
-   ```bash
-   git init
-   ```
-
-2. **Hubungkan ke Repository**:
-   Jika muncul error `remote origin already exists`, gunakan perintah `set-url` di langkah ke-3.
-
-3. **Update URL dengan Token**: 
-   Masuk ke GitHub Settings > Developer Settings > Personal Access Tokens (classic). Buat token dengan akses 'repo'. Lalu jalankan:
-   
-   `git remote set-url origin https://TOKEN_ANDA@github.com/Xpurple27/LevelUP-Private.git`
-
-4. **Simpan Perubahan (Stage & Commit)**:
+1. **Inisialisasi Git**: `git init`
+2. **Hubungkan ke Repository**: 
+   `git remote add origin https://TOKEN_ANDA@github.com/Xpurple27/LevelUP-Private.git`
+   *Jika sudah ada, gunakan:* `git remote set-url origin ...`
+3. **Simpan & Push**:
    ```bash
    git add .
-   git commit -m "Update: Deskripsi perubahan Anda"
-   ```
-
-5. **Kirim ke Git (Push)**:
-   ```bash
+   git commit -m "Update: Deskripsi perubahan"
    git push -u origin main
    ```
-
-### Troubleshooting: Remote Origin Already Exists
-Jika Anda melihat pesan ini, berarti remote sudah terkonfigurasi. Jangan gunakan `git remote add`, tapi gunakan:
-`git remote set-url origin https://TOKEN_ANDA@github.com/Xpurple27/LevelUP-Private.git`
 
 ---
 © 2024 Level Up. All rights reserved.
