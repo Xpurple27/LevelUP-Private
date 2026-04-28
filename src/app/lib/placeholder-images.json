@@ -2,6 +2,12 @@
 {
   "placeholderImages": [
     {
+      "id": "site-logo",
+      "description": "Logo Level Up",
+      "imageUrl": "",
+      "imageHint": "company logo"
+    },
+    {
       "id": "hero-tutor",
       "description": "Professional math tutor smiling",
       "imageUrl": "https://picsum.photos/seed/math-tutor/600/800",
