@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'Level Up - Private Matematika Mudah Dipahami',
-  description: 'Level Up menyediakan bimbingan belajar matematika private untuk SMP, SMA, dan persiapan UTBK. Fokus pada pemahaman konsep, nilai naik signifikan!',
+  description: 'Level Up menyediakan bimbingan belajar matematika private untuk SD, SMP, SMA, dan persiapan UTBK. Fokus pada pemahaman konsep, nilai naik signifikan!',
 };
 
 export default function RootLayout({
