@@ -30,6 +30,7 @@
     --chart-4: 0 0% 60%;
     --chart-5: 0 0% 80%;
     --radius: 0.75rem;
+    scroll-behavior: smooth;
   }
 }
 
@@ -37,8 +38,10 @@
   * {
     @apply border-border;
   }
+  html {
+    @apply scroll-pt-20;
+  }
   body {
-    @apply bg-background text-foreground font-body;
-    scroll-behavior: smooth;
+    @apply bg-background text-foreground font-body antialiased;
   }
 }
