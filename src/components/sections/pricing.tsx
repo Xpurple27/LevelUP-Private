@@ -46,8 +46,8 @@ export function Pricing() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-6 xl:gap-8 items-stretch">
           {packages.map((pkg, idx) => (
             <Card key={idx} className={cn(
-              "relative border-2 transition-all duration-300 rounded-[2rem] overflow-hidden flex flex-col h-full",
-              pkg.isPopular ? "border-primary shadow-2xl lg:scale-105 z-10 bg-white" : "border-border shadow-md"
+              "relative border-2 transition-all duration-300 rounded-[2rem] overflow-hidden flex flex-col h-full hover:shadow-2xl hover:-translate-y-2",
+              pkg.isPopular ? "border-primary shadow-2xl lg:scale-105 z-10 bg-white" : "border-border shadow-md hover:border-primary/30"
             )}>
               {pkg.isPopular && (
                 <div className="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold uppercase tracking-widest py-1.5 px-6 rounded-bl-2xl">
