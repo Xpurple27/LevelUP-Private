@@ -2,34 +2,31 @@
 
 Bimbingan belajar matematika private yang fokus pada pemahaman konsep dan kenaikan nilai yang signifikan.
 
-## Teknologi yang Digunakan
-- **Next.js 15 (App Router)**
-- **Tailwind CSS**
-- **ShadCN UI**
-- **Lucide Icons**
-- **Firebase** (Siap integrasi)
+## 📁 Struktur Folder Utama
+- **`/public`**: (Lokasi di sini!) Tempat menyimpan logo, foto, dan aset gambar lokal.
+- **`/src/app`**: Berisi halaman website dan routing.
+- **`/src/components`**: Berisi komponen UI (Navbar, Hero, Section, dll).
+- **`package.json`**: Pengaturan proyek dan dependensi.
 
-## Cara Menggunakan Foto Lokal
+## 🖼️ Cara Menggunakan Foto Lokal
 Jika Anda ingin menggunakan foto sendiri tanpa URL internet:
-1. Unggah file gambar Anda ke folder **`public/`** di proyek ini.
+1. Unggah file gambar Anda ke folder **`public/`**.
 2. Buka file `src/app/lib/placeholder-images.json`.
 3. Ganti `imageUrl` menjadi path file tersebut, diawali dengan garis miring. 
    - Contoh: Jika foto ada di `public/logo-saya.png`, maka isi `imageUrl` dengan `"/logo-saya.png"`.
 
-## Cara Mengembangkan Secara Lokal
+## 🚀 Cara Pengembangan Secara Lokal
 1. Jalankan `npm install`
 2. Jalankan `npm run dev`
 3. Buka `http://localhost:9002`
 
-## Cara Push ke Git & Deploy (Vercel/GitHub)
-1. **Inisialisasi Git**: `git init`
-2. **Hubungkan ke Repository**: 
-   `git remote add origin https://TOKEN_ANDA@github.com/Xpurple27/LevelUP-Private.git`
-   *Jika sudah ada, gunakan:* `git remote set-url origin ...`
-3. **Simpan & Push**:
+## 📤 Cara Push ke Git & Deploy (GitHub)
+1. **Reset Remote (Jika error)**:
+   `git remote set-url origin https://TOKEN_ANDA@github.com/Xpurple27/LevelUP-Private.git`
+2. **Simpan & Push**:
    ```bash
    git add .
-   git commit -m "Update: Deskripsi perubahan"
+   git commit -m "Update: Perubahan terbaru"
    git push -u origin main
    ```
 
