@@ -30,7 +30,7 @@ export function Contact() {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="rounded-full px-10 py-7 text-lg border-2 border-primary text-primary hover:bg-primary/5" asChild>
-                <a href="https://wa.me/628123456789?text=Halo%20MathSpark,%20saya%20mau%20konsultasi%20dulu">
+                <a href="https://wa.me/628123456789?text=Halo%20LevelUp,%20saya%20mau%20konsultasi%20dulu">
                   Chat WhatsApp
                 </a>
               </Button>
@@ -41,13 +41,13 @@ export function Contact() {
                 <div className="bg-background p-3 rounded-full border border-border group-hover:bg-primary group-hover:text-white transition-all">
                   <Instagram className="h-5 w-5" />
                 </div>
-                <span className="text-sm font-medium">@mathspark_id</span>
+                <span className="text-sm font-medium">@levelup_id</span>
               </div>
               <div className="flex items-center gap-3 group cursor-pointer">
                 <div className="bg-background p-3 rounded-full border border-border group-hover:bg-primary group-hover:text-white transition-all">
                   <Mail className="h-5 w-5" />
                 </div>
-                <span className="text-sm font-medium">halo@mathspark.id</span>
+                <span className="text-sm font-medium">halo@levelup.id</span>
               </div>
             </div>
           </div>

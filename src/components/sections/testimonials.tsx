@@ -12,7 +12,7 @@ export function Testimonials() {
       class: "Kelas 12 SMA",
       result: "UTBK 2023 - Lolos ITB",
       avatarId: "avatar-1",
-      comment: "Dulu paling benci matematika karena rumit banget. Sejak belajar di Math Spark, saya jadi paham logikanya. Belajar jadi seru!"
+      comment: "Dulu paling benci matematika karena rumit banget. Sejak belajar di Level Up, saya jadi paham logikanya. Belajar jadi seru!"
     },
     {
       name: "Siska Amelia",
@@ -26,7 +26,7 @@ export function Testimonials() {
       class: "Kelas 11 SMA",
       result: "Ranking 1 Pararel",
       avatarId: "avatar-3",
-      comment: "Math Spark ngebantu banget pas mau persiapan olimpiade. Cara ngerjainnya simpel dan nggak kaku. Rekomen banget!"
+      comment: "Level Up ngebantu banget pas mau persiapan olimpiade. Cara ngerjainnya simpel dan nggak kaku. Rekomen banget!"
     }
   ];
 

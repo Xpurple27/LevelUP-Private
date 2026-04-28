@@ -45,7 +45,7 @@ export function Navbar() {
             "text-xl font-bold font-headline tracking-tight",
             scrolled || pathname !== '/' ? "text-slate-900" : "text-slate-900"
           )}>
-            Math<span className="text-primary">Spark</span>
+            Level<span className="text-primary">Up</span>
           </span>
         </Link>
 

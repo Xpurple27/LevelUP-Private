@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Math Spark - Private Matematika Mudah Dipahami',
+  title: 'Level Up - Private Matematika Mudah Dipahami',
   description: 'Bimbingan belajar matematika private untuk SMP, SMA, dan persiapan UTBK. Konsep matang, nilai naik signifikan!',
 };
 

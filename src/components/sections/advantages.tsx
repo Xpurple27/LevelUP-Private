@@ -31,7 +31,7 @@ export function Advantages() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-headline leading-tight">Mengapa Harus Belajar di <span className="text-primary">Math Spark?</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-headline leading-tight">Mengapa Harus Belajar di <span className="text-primary">Level Up?</span></h2>
             <p className="text-lg text-muted-foreground mb-10">
               Kami tidak hanya memberikan jawaban, tapi memberikan cara berpikir. Inilah keunggulan yang membuat siswa kami betah dan berprestasi.
             </p>
@@ -52,7 +52,7 @@ export function Advantages() {
             <div className="relative bg-white p-1 rounded-[2.5rem] shadow-2xl overflow-hidden border">
               <img 
                 src="https://picsum.photos/seed/math-adv/800/800" 
-                alt="Advantages of Math Spark" 
+                alt="Advantages of Level Up" 
                 className="rounded-[2.4rem] w-full object-cover aspect-square"
                 data-ai-hint="student study"
               />

@@ -32,7 +32,7 @@ export function Results() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-headline uppercase tracking-widest">Bukti Nyata Prestasi</h2>
           <p className="text-primary-foreground/80 max-w-xl mx-auto">
-            Keberhasilan siswa adalah prioritas utama kami. Berikut adalah capaian yang telah kami raih bersama.
+            Keberhasilan siswa adalah prioritas utama kami. Berikut adalah capaian yang telah kami raih bersama Level Up.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export function Results() {
           <div className="text-foreground">
             <h3 className="text-2xl font-bold mb-4 text-primary">Case Study: Transformasi UTBK</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Salah satu siswa kami mengawali persiapan UTBK dengan skor Try Out Matematika 450. Setelah program intensif 3 bulan bersama Math Spark, skor UTBK aslinya melejit hingga 780, mengantarkannya ke program studi Kedokteran.
+              Salah satu siswa kami mengawali persiapan UTBK dengan skor Try Out Matematika 450. Setelah program intensif 3 bulan bersama Level Up, skor UTBK aslinya melejit hingga 780, mengantarkannya ke program studi Kedokteran.
             </p>
             <div className="flex items-center gap-2">
               <div className="h-2 w-full bg-secondary rounded-full overflow-hidden">

@@ -24,7 +24,7 @@ export default function TutorsPage() {
     name: "Arya Wijaya, S.Si.",
     title: "Lead Mathematics Tutor & Curriculum Designer",
     location: "Jakarta, Indonesia",
-    email: "arya@mathspark.id",
+    email: "arya@levelup.id",
     phone: "+62 812-3456-789",
     summary: "Seorang pengajar matematika yang berdedikasi dengan pengalaman lebih dari 5 tahun dalam membimbing siswa tingkat SMP, SMA, dan persiapan masuk Perguruan Tinggi Negeri. Spesialis dalam penyederhanaan konsep kalkulus dan aljabar melalui metode visual dan logika terapan.",
     education: [
@@ -38,7 +38,7 @@ export default function TutorsPage() {
     experience: [
       {
         role: "Lead Tutor",
-        company: "Math Spark",
+        company: "Level Up",
         year: "2020 - Sekarang",
         description: "Mengembangkan kurikulum belajar mandiri dan mengajar lebih dari 500 siswa secara online maupun offline."
       },

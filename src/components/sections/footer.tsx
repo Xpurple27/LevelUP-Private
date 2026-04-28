@@ -12,7 +12,7 @@ export function Footer() {
               <Zap className="h-5 w-5 text-white" />
             </div>
             <span className="text-lg font-bold font-headline">
-              Math<span className="text-primary">Spark</span>
+              Level<span className="text-primary">Up</span>
             </span>
           </div>
           
@@ -24,7 +24,7 @@ export function Footer() {
           </div>
 
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Math Spark. All rights reserved.
+            © {new Date().getFullYear()} Level Up. All rights reserved.
           </p>
         </div>
       </div>
