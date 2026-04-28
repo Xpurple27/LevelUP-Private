@@ -3,6 +3,7 @@ import React from 'react';
 import { Check, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 export function Pricing() {
   const packages = [
@@ -42,18 +43,18 @@ export function Pricing() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-6 xl:gap-8 items-stretch">
           {packages.map((pkg, idx) => (
             <Card key={idx} className={cn(
-              "relative border-2 transition-all duration-300 rounded-[2rem] overflow-hidden",
-              pkg.isPopular ? "border-primary shadow-2xl scale-105 z-10" : "border-border shadow-md"
+              "relative border-2 transition-all duration-300 rounded-[2rem] overflow-hidden flex flex-col h-full",
+              pkg.isPopular ? "border-primary shadow-2xl lg:scale-105 z-10 bg-white" : "border-border shadow-md"
             )}>
               {pkg.isPopular && (
-                <div className="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold uppercase tracking-widest py-1 px-4 rounded-bl-xl">
+                <div className="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold uppercase tracking-widest py-1.5 px-6 rounded-bl-2xl">
                   Best Value
                 </div>
               )}
-              <CardHeader className="pt-10 px-8">
+              <CardHeader className="pt-10 px-6 md:px-8">
                 <CardTitle className="text-xl font-bold mb-2 uppercase tracking-wide">{pkg.name}</CardTitle>
                 <div className="flex items-baseline gap-1">
                   <span className="text-4xl font-extrabold text-primary">{pkg.price}</span>
@@ -61,11 +62,11 @@ export function Pricing() {
                 </div>
                 <p className="text-xs text-muted-foreground mt-4 leading-relaxed italic">{pkg.desc}</p>
               </CardHeader>
-              <CardContent className="px-8 pt-8">
+              <CardContent className="px-6 md:px-8 pt-8 flex-grow">
                 <ul className="space-y-4">
                   {pkg.features.map((feature, fIdx) => (
-                    <li key={fIdx} className="flex items-center gap-3 text-sm">
-                      <div className="bg-primary/10 p-1 rounded-full">
+                    <li key={fIdx} className="flex items-start gap-3 text-sm">
+                      <div className="bg-primary/10 p-1 rounded-full shrink-0 mt-0.5">
                         <Check className="h-3 w-3 text-primary" />
                       </div>
                       <span>{feature}</span>
@@ -73,10 +74,10 @@ export function Pricing() {
                   ))}
                 </ul>
               </CardContent>
-              <CardFooter className="px-8 pb-10 pt-8">
+              <CardFooter className="px-6 md:px-8 pb-10 pt-8 mt-auto">
                 <Button className={cn(
-                  "w-full rounded-full py-6 text-md font-bold",
-                  pkg.isPopular ? "bg-primary text-white" : "bg-white border-primary border-2 text-primary hover:bg-primary/5"
+                  "w-full rounded-full py-6 text-md font-bold transition-all",
+                  pkg.isPopular ? "bg-primary text-white shadow-lg hover:shadow-primary/20" : "bg-white border-primary border-2 text-primary hover:bg-primary/5"
                 )} asChild>
                   <a href={`https://wa.me/628123456789?text=Halo%20MathSpark,%20saya%20ingin%20daftar%20paket%20${pkg.name}`}>
                     Pilih Paket Ini
@@ -87,9 +88,9 @@ export function Pricing() {
           ))}
         </div>
 
-        <div className="mt-16 flex items-center justify-center gap-4 p-4 bg-primary/5 rounded-2xl max-w-2xl mx-auto">
-          <Info className="h-5 w-5 text-primary shrink-0" />
-          <p className="text-sm text-muted-foreground">
+        <div className="mt-16 flex items-start md:items-center justify-center gap-4 p-5 md:p-4 bg-primary/5 rounded-2xl max-w-2xl mx-auto border border-primary/10">
+          <Info className="h-5 w-5 text-primary shrink-0 mt-0.5 md:mt-0" />
+          <p className="text-sm text-muted-foreground leading-relaxed">
             Harga dapat bervariasi tergantung lokasi (untuk sesi offline) dan jumlah siswa dalam satu kelompok. Hubungi kami untuk penawaran kelompok (2-3 orang).
           </p>
         </div>
@@ -97,5 +98,3 @@ export function Pricing() {
     </section>
   );
 }
-
-import { cn } from '@/lib/utils';
