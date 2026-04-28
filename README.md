@@ -17,21 +17,20 @@ Bimbingan belajar matematika private yang fokus pada pemahaman konsep dan kenaik
 ## Cara Push ke Git & Deploy (Vercel/GitHub)
 Jika Anda menggunakan Firebase Studio dan ingin menghubungkannya ke repositori Git Anda:
 
-1. **Inisialisasi Git** (hanya jika folder .git belum ada):
+1. **Inisialisasi Git**:
    ```bash
    git init
    ```
 
-2. **Hubungkan ke Repository Anda**:
-   Ganti URL di bawah dengan URL repository GitHub Anda.
+2. **Hubungkan ke Repository**:
    ```bash
-   git remote add origin <URL_REPOSITORY_ANDA>
+   git remote add origin https://github.com/Xpurple27/LevelUP-Private.git
    ```
 
 3. **Simpan Perubahan (Stage & Commit)**:
    ```bash
    git add .
-   git commit -m "Update: Mengganti nama brand ke Level Up dan perbaikan UI"
+   git commit -m "Update: Deskripsi perubahan Anda"
    ```
 
 4. **Kirim ke Git (Push)**:
@@ -39,8 +38,13 @@ Jika Anda menggunakan Firebase Studio dan ingin menghubungkannya ke repositori G
    git push -u origin main
    ```
 
-5. **Deployment**:
-   Hubungkan akun Vercel Anda ke repositori GitHub tersebut. Vercel akan secara otomatis melakukan build setiap kali Anda melakukan `git push`.
+### Troubleshooting: Authentication Failed
+Jika muncul error `Authentication failed`, GitHub meminta **Personal Access Token (PAT)** bukan password akun.
+1. Buat Token di: GitHub Settings > Developer Settings > Personal Access Tokens (classic).
+2. Beri akses 'repo'.
+3. Jalankan perintah ini di terminal untuk menyimpan token:
+   `git remote set-url origin https://<TOKEN_ANDA>@github.com/Xpurple27/LevelUP-Private.git`
+4. Ulangi perintah `git push`.
 
 ---
 © 2024 Level Up. All rights reserved.
