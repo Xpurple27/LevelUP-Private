@@ -5,7 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle, Zap } from 'lucide-react';
+import { CheckCircle, Zap, Image as ImageIcon } from 'lucide-react';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-tutor');
@@ -48,7 +48,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative group">
           <div className="absolute inset-0 bg-primary/5 rounded-3xl -rotate-3 scale-105"></div>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[3/4]">
             {heroImage && (
@@ -61,6 +61,12 @@ export function Hero() {
                 priority
               />
             )}
+            {/* Photo Guide Overlay */}
+            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-6 text-center">
+              <ImageIcon className="h-12 w-12 text-white mb-4" />
+              <p className="text-white font-bold text-lg mb-2">Rekomendasi Foto</p>
+              <p className="text-white/80 text-sm">Gunakan foto tutor profesional yang sedang tersenyum ramah menghadap kamera. Pastikan pencahayaan terang dan latar belakang bersih.</p>
+            </div>
           </div>
           {/* Badge */}
           <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-border flex items-center gap-4 max-w-[240px]">

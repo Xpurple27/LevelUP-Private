@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Trophy, TrendingUp, GraduationCap, Users } from 'lucide-react';
+import { Trophy, TrendingUp, GraduationCap, Users, Image as ImageIcon } from 'lucide-react';
 
 export function Results() {
   const stats = [
@@ -61,13 +61,19 @@ export function Results() {
               <span className="font-bold text-primary whitespace-nowrap">Goal Achieved!</span>
             </div>
           </div>
-          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-lg border border-border">
+          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-lg border border-border group">
              <img 
               src="https://picsum.photos/seed/results-graph/600/400" 
               alt="Result Comparison" 
               className="w-full h-full object-cover"
               data-ai-hint="data chart"
             />
+            {/* Photo Guide Overlay */}
+            <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-6 text-center text-white">
+              <ImageIcon className="h-8 w-8 mb-3" />
+              <p className="font-bold mb-1">Rekomendasi Konten</p>
+              <p className="text-xs">Gunakan grafik kenaikan nilai asli atau foto lembar hasil ujian siswa yang menunjukkan skor tinggi (bisa disamarkan identitasnya).</p>
+            </div>
           </div>
         </div>
       </div>

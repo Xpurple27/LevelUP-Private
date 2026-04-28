@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Brain, Headphones, PenTool, Layout } from 'lucide-react';
+import { Brain, Headphones, PenTool, Layout, Image as ImageIcon } from 'lucide-react';
 
 export function Advantages() {
   const points = [
@@ -56,6 +56,12 @@ export function Advantages() {
                 className="rounded-[2.4rem] w-full object-cover aspect-square"
                 data-ai-hint="student study"
               />
+              {/* Photo Guide Overlay */}
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-8 text-center text-white">
+                <ImageIcon className="h-10 w-10 mb-4" />
+                <p className="font-bold text-lg mb-2">Rekomendasi Foto</p>
+                <p className="text-sm">Gunakan foto interaksi nyata antara tutor dan siswa yang sedang berdiskusi dengan antusias di depan papan tulis atau meja belajar.</p>
+              </div>
             </div>
             <div className="absolute top-10 -right-8 bg-primary text-white p-6 rounded-2xl shadow-xl animate-bounce duration-[3000ms]">
               <p className="text-xs uppercase font-bold tracking-widest mb-1">Success Rate</p>
