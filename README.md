@@ -38,15 +38,16 @@ Jika Anda menggunakan Firebase Studio dan ingin menghubungkannya ke repositori G
    git push -u origin main
    ```
 
-### Troubleshooting: Authentication Failed / No Such File
-Jika muncul error saat push, itu karena GitHub meminta **Personal Access Token (PAT)**.
-1. Buat Token di: GitHub Settings > Developer Settings > Personal Access Tokens (classic).
-2. Beri akses 'repo'.
-3. **PENTING**: Jalankan perintah ini di terminal (Ganti `TOKEN_ANDA` dengan token asli, **JANGAN** gunakan tanda kurung `< >`):
-   
-   `git remote set-url origin https://TOKEN_ANDA_DISINI@github.com/Xpurple27/LevelUP-Private.git`
+### Troubleshooting: Authentication Failed / Invalid Token
+Jika muncul error `Authentication failed`, itu karena GitHub meminta **Personal Access Token (PAT)**.
 
-4. Ulangi perintah `git push -u origin main`.
+1. **Buat Token**: Masuk ke GitHub Settings > Developer Settings > Personal Access Tokens (classic).
+2. **Pilih Scope**: Centang bagian **'repo'**.
+3. **Update URL**: Jalankan perintah ini di terminal (Ganti `TOKEN_ANDA` dengan token asli Anda):
+   
+   `git remote set-url origin https://TOKEN_ANDA@github.com/Xpurple27/LevelUP-Private.git`
+
+4. **Push Ulang**: Jalankan `git push -u origin main` kembali.
 
 ---
 © 2024 Level Up. All rights reserved.
