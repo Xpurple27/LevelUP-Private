@@ -24,7 +24,7 @@ export function Navbar() {
   const navLinks = [
     { name: 'Tentang', href: pathname === '/' ? '#about' : '/#about' },
     { name: 'Layanan', href: pathname === '/' ? '#services' : '/#services' },
-    { name: 'Tim Pengajar', href: '/tutors' },
+    { name: 'Profil', href: '/tutors' },
     { name: 'Biaya', href: pathname === '/' ? '#pricing' : '/#pricing' },
     { name: 'FAQ', href: pathname === '/' ? '#faq' : '/#faq' },
   ];
