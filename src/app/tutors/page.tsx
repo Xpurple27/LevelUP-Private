@@ -28,7 +28,7 @@ export default function TutorsPage() {
   const profile = {
     name: "Arya Wijaya, S.Si.",
     title: "Lead Mathematics Tutor & Curriculum Designer",
-    location: "Jakarta, Indonesia",
+    location: "Banda Aceh, Indonesia",
     email: "arya@levelup.id",
     phone: "082369290805",
     summary: "Seorang pengajar matematika yang berdedikasi dengan pengalaman lebih dari 5 tahun dalam membimbing siswa tingkat SMP, SMA, dan persiapan masuk Perguruan Tinggi Negeri. Spesialis dalam mengajar murid-murid dari sekolah unggulan dengan pendekatan logika yang kuat.",

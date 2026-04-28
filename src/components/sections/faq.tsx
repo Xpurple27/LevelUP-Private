@@ -27,7 +27,7 @@ export function FAQ() {
     },
     {
       q: "Area mana saja yang tercover untuk les offline?",
-      a: "Saat ini kami mengcover area Jakarta Selatan, Depok, dan sebagian Tangerang Selatan. Untuk area lain, silakan konsultasikan lebih lanjut."
+      a: "Saat ini kami melayani bimbingan belajar offline untuk seluruh area Kota Banda Aceh dan sekitarnya. Untuk area lain, silakan konsultasikan lebih lanjut."
     }
   ];
 
