@@ -28,7 +28,7 @@
     {
       "id": "contact-img",
       "description": "Foto Siswa Bahagia di Bagian Kontak",
-      "imageUrl": "https://picsum.photos/seed/contact-img/800/1200",
+      "imageUrl": "/math.png",
       "imageHint": "happy student"
     },
     {

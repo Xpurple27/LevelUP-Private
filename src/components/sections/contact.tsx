@@ -7,7 +7,7 @@ import { Instagram, Mail, ArrowRight, Zap } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Contact() {
-  const contactImg = PlaceHolderImages.find(img => img.id === 'contact-img')?.imageUrl || "https://picsum.photos/seed/contact-img/800/1200";
+  const contactImg = PlaceHolderImages.find(img => img.id === 'contact-img')?.imageUrl || "/math.png";
 
   return (
     <section id="contact" className="py-24 bg-background">
@@ -44,7 +44,7 @@ export function Contact() {
                 <div className="bg-background p-3 rounded-full border border-border group-hover:bg-primary group-hover:text-white transition-all">
                   <Instagram className="h-5 w-5" />
                 </div>
-                <span className="text-sm font-medium">@levelup_id</span>
+                <span className="text-sm font-medium">@levelupprivate</span>
               </div>
               <div className="flex items-center gap-3 group cursor-pointer">
                 <div className="bg-background p-3 rounded-full border border-border group-hover:bg-primary group-hover:text-white transition-all">

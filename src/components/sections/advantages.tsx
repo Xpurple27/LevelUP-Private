@@ -18,11 +18,6 @@ export function Advantages() {
       icon: <Brain className="h-6 w-6" />
     },
     {
-      title: "Support 24/7",
-      desc: "Ada PR sulit di jam 9 malam? Chat tutor langsung untuk bantuan cepat.",
-      icon: <Headphones className="h-6 w-6" />
-    },
-    {
       title: "Modul Custom",
       desc: "Setiap siswa mendapat bank soal yang berbeda sesuai kelemahan masing-masing.",
       icon: <Layout className="h-6 w-6" />

@@ -15,7 +15,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
-  const logoData = PlaceHolderImages.find(img => img.id === 'site-logo');
+  const logoData = PlaceHolderImages.find(img => img.id === 'site-logo')?.imageUrl || "/Levelupnewlogo.jpeg";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,20 +42,14 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          {logoData?.imageUrl ? (
-            <div className="relative h-10 w-10 overflow-hidden rounded-lg">
+          <div className="relative h-10 w-10 overflow-hidden rounded-lg">
               <Image 
-                src="/Levelupnewlogo.jpeg"
+                src={logoData}
                 alt="Level Up Logo" 
                 fill 
                 className="object-contain"
               />
             </div>
-          ) : (
-            <div className="bg-primary p-2 rounded-lg group-hover:rotate-12 transition-transform">
-              <Zap className="h-6 w-6 text-white" />
-            </div>
-          )}
           <span className="text-xl font-bold font-headline tracking-tight text-slate-900">
             Level<span className="text-primary">Up</span>
           </span>
