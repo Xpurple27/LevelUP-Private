@@ -8,25 +8,25 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export function Testimonials() {
   const reviews = [
     {
-      name: "Budi Santoso",
-      class: "Kelas 12 SMA",
-      result: "UTBK 2023 - Lolos ITB",
+      name: "Cut Faradisa",
+      class: "Kelas 11 SMAN Modal Bangsa",
+      result: "Nilai Matematika Meningkat",
       avatarId: "avatar-1",
-      comment: "Dulu paling benci matematika karena rumit banget. Sejak belajar di Level Up, saya jadi paham logikanya. Belajar jadi seru!"
+      comment: "Dulu paling benci matematika karena rumit banget. Sejak belajar di Level Up, saya jadi paham logikanya. Belajar jadi seru dan terarah!"
     },
     {
-      name: "Siska Amelia",
-      class: "Kelas 9 SMP",
-      result: "Nilai US 60 -> 95",
+      name: "Kaysa Humaira",
+      class: "Kelas 6 SDIK Nurul Quran",
+      result: "Lulus Tes SMP Favorit (MTsN Model)",
       avatarId: "avatar-2",
-      comment: "Penjelasan tutor sangat sabar. Kalau belum ngerti diulang sampai paham beneran. Modul soalnya juga pas banget sama yang keluar di ujian."
+      comment: "Penjelasan tutor sangat sabar. Kalau belum ngerti diulang sampai paham beneran. Modul soalnya juga pas banget sama yang keluar di tes masuk sekolah."
     },
     {
-      name: "Andi Wijaya",
-      class: "Kelas 11 SMA",
-      result: "Ranking 1 Pararel",
+      name: "Fatimah Azzahra",
+      class: "Kelas 12 SMAN 1 BNA",
+      result: "Lulus SNBT Ekonomi USK",
       avatarId: "avatar-3",
-      comment: "Level Up ngebantu banget pas mau persiapan olimpiade. Cara ngerjainnya simpel dan nggak kaku. Rekomen banget!"
+      comment: "Level Up ngebantu banget pas mau persiapan UTBK. Cara ngerjainnya simpel dan nggak kaku. Rekomen banget!"
     }
   ];
 
