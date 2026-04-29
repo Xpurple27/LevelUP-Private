@@ -9,15 +9,15 @@ export function Pricing() {
   const packages = [
     {
       name: "Starter Package",
-      price: "150rb",
+      price: "120rb",
       unit: "/sesi",
       desc: "Sesuai untuk konsultasi PR atau materi spesifik yang sulit.",
-      features: ["Durasi 90 Menit", "1 Sesi Belajar", "Materi Custom", "Tanya Jawab WA 24/7"],
+      features: ["Durasi 90 Menit", "1 Sesi Belajar", "Materi Custom"],
       isPopular: false
     },
     {
       name: "Monthly Regular",
-      price: "1.1jt",
+      price: "800rb",
       unit: "/bulan",
       desc: "Paket hemat untuk pemantauan belajar rutin setiap minggu.",
       features: ["Durasi 90 Menit", "8 Sesi (2x seminggu)", "Free Try Out Bulanan", "Laporan Perkembangan", "Materi Pendalaman"],

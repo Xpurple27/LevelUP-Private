@@ -45,7 +45,7 @@ export function Navbar() {
           {logoData?.imageUrl ? (
             <div className="relative h-10 w-10 overflow-hidden rounded-lg">
               <Image 
-                src={logoData.imageUrl || "/Levelupnewlogo.jpeg"} 
+                src="/Levelupnewlogo.jpeg"
                 alt="Level Up Logo" 
                 fill 
                 className="object-contain"
