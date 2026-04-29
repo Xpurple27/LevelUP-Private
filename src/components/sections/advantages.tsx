@@ -1,8 +1,11 @@
 
 import React from 'react';
-import { Brain, Headphones, PenTool, Layout, Image as ImageIcon } from 'lucide-react';
+import { Brain, Headphones, PenTool, Layout } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Advantages() {
+  const advantagesImg = PlaceHolderImages.find(img => img.id === 'advantages-img')?.imageUrl || "https://picsum.photos/seed/math-adv/800/800";
+
   const points = [
     {
       title: "Metode Step-by-Step",
@@ -48,20 +51,13 @@ export function Advantages() {
             </div>
           </div>
           <div className="relative group">
-            <div className="absolute -inset-4 bg-primary/10 rounded-[2rem] blur-2xl group-hover:bg-primary/20 transition-all"></div>
+            <div className="absolute -inset-4 bg-primary/10 rounded-[2rem] blur-2xl"></div>
             <div className="relative bg-white p-1 rounded-[2.5rem] shadow-2xl overflow-hidden border">
               <img 
-                src="https://picsum.photos/seed/math-adv/800/800" 
+                src={advantagesImg} 
                 alt="Advantages of Level Up" 
                 className="rounded-[2.4rem] w-full object-cover aspect-square"
-                data-ai-hint="student study"
               />
-              {/* Photo Guide Overlay */}
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-8 text-center text-white">
-                <ImageIcon className="h-10 w-10 mb-4" />
-                <p className="font-bold text-lg mb-2">Rekomendasi Foto</p>
-                <p className="text-sm">Gunakan foto interaksi nyata antara tutor dan siswa yang sedang berdiskusi dengan antusias di depan papan tulis atau meja belajar.</p>
-              </div>
             </div>
             <div className="absolute top-10 -right-8 bg-primary text-white p-6 rounded-2xl shadow-xl animate-bounce [animation-duration:3s]">
               <p className="text-xs uppercase font-bold tracking-widest mb-1">Success Rate</p>

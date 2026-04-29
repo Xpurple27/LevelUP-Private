@@ -3,15 +3,33 @@
   "placeholderImages": [
     {
       "id": "site-logo",
-      "description": "Logo Level Up (Ganti ke /nama-file.png jika sudah upload ke folder public)",
+      "description": "Logo Level Up",
       "imageUrl": "/Levelupnewlogo.jpeg",
       "imageHint": "company logo"
     },
     {
       "id": "hero-tutor",
-      "description": "Professional math tutor smiling",
+      "description": "Foto Utama Tutor",
       "imageUrl": "/fototutor.jpg",
       "imageHint": "tutor teacher"
+    },
+    {
+      "id": "advantages-img",
+      "description": "Foto Keunggulan Belajar",
+      "imageUrl": "https://picsum.photos/seed/math-adv/800/800",
+      "imageHint": "student study"
+    },
+    {
+      "id": "results-case-study",
+      "description": "Foto Hasil Belajar atau Grafik Nilai",
+      "imageUrl": "https://picsum.photos/seed/results-graph/600/400",
+      "imageHint": "data chart"
+    },
+    {
+      "id": "contact-img",
+      "description": "Foto Siswa Bahagia di Bagian Kontak",
+      "imageUrl": "https://picsum.photos/seed/contact-img/800/1200",
+      "imageHint": "happy student"
     },
     {
       "id": "gallery-1",

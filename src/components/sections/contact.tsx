@@ -3,9 +3,12 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Instagram, Mail, MessageCircle, Phone, ArrowRight, Zap, Image as ImageIcon } from 'lucide-react';
+import { Instagram, Mail, ArrowRight, Zap } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Contact() {
+  const contactImg = PlaceHolderImages.find(img => img.id === 'contact-img')?.imageUrl || "https://picsum.photos/seed/contact-img/800/1200";
+
   return (
     <section id="contact" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-6">
@@ -47,24 +50,17 @@ export function Contact() {
                 <div className="bg-background p-3 rounded-full border border-border group-hover:bg-primary group-hover:text-white transition-all">
                   <Mail className="h-5 w-5" />
                 </div>
-                <span className="text-sm font-medium">halo@levelup.id</span>
+                <span className="text-sm font-medium">afansa27@gmail.com</span>
               </div>
             </div>
           </div>
 
-          <div className="lg:col-span-2 relative min-h-[400px] group">
+          <div className="lg:col-span-2 relative min-h-[400px]">
             <img 
-              src="https://picsum.photos/seed/contact-img/800/1200" 
+              src={contactImg} 
               alt="Ready to learn" 
               className="absolute inset-0 w-full h-full object-cover"
-              data-ai-hint="happy student"
             />
-            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-8 text-center text-white z-20">
-              <ImageIcon className="h-10 w-10 mb-4 text-primary" />
-              <p className="font-bold text-lg mb-2">Rekomendasi Foto</p>
-              <p className="text-sm">Gunakan foto potret seorang siswa yang tampak percaya diri dan bahagia sambil membawa buku atau peralatan belajar.</p>
-            </div>
-            
             <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-12 text-white z-10">
               <div className="bg-white/20 backdrop-blur-md p-6 rounded-2xl border border-white/20">
                 <p className="text-lg font-bold mb-1 italic">"The only way to learn mathematics is to do mathematics."</p>
