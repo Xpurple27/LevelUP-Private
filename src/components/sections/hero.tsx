@@ -5,7 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle, Zap, Image as ImageIcon } from 'lucide-react';
+import { CheckCircle, Zap } from 'lucide-react';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-tutor');
@@ -39,7 +39,7 @@ export function Hero() {
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 md:gap-6 mt-4">
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-primary" />
-              <span className="text-sm font-medium">Bebas Tanya di Luar Jam</span>
+              <span className="text-sm font-medium">Jam Belajar Fleksibel</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-primary" />
@@ -61,11 +61,6 @@ export function Hero() {
                 priority
               />
             )}
-            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-6 text-center">
-              <ImageIcon className="h-12 w-12 text-white mb-4" />
-              <p className="text-white font-bold text-lg mb-2">Rekomendasi Foto</p>
-              <p className="text-white/80 text-sm">Gunakan foto tutor profesional yang sedang tersenyum ramah menghadap kamera. Pastikan pencahayaan terang dan latar belakang bersih.</p>
-            </div>
           </div>
           <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-left-6 bg-white p-4 md:p-6 rounded-2xl shadow-xl border border-border flex items-center gap-3 md:gap-4 max-w-[200px] md:max-w-[240px]">
             <div className="bg-primary/10 p-2 md:p-3 rounded-full shrink-0">
