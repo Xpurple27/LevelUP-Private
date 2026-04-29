@@ -4,7 +4,7 @@ import { Trophy, TrendingUp, GraduationCap, Users } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Results() {
-  const caseStudyImg = PlaceHolderImages.find(img => img.id === 'results-case-study')?.imageUrl || "https://picsum.photos/seed/results-graph/600/400";
+  const caseStudyImg = PlaceHolderImages.find(img => img.id === 'results-case-study')?.imageUrl || "/image.png";
 
   const stats = [
     {

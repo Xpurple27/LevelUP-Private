@@ -55,7 +55,9 @@ export function Services() {
               <div className="absolute top-0 left-0 w-full h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
               <CardHeader className="pt-10">
                 <div className="mb-4 bg-primary/5 w-fit p-4 rounded-2xl group-hover:bg-primary group-hover:text-white transition-colors">
-                  {React.cloneElement(level.icon as React.ReactElement, { className: 'h-8 w-8 transition-colors' })}
+                  {React.cloneElement(level.icon as React.ReactElement,
+                  // @ts-ignore 
+                    { className: 'h-8 w-8 transition-colors' })}
                 </div>
                 <CardTitle className="text-xl md:text-2xl font-bold">{level.title}</CardTitle>
               </CardHeader>

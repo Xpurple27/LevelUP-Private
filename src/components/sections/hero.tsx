@@ -8,7 +8,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CheckCircle, Zap } from 'lucide-react';
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-tutor');
+  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-tutor')?.imageUrl || "/fototutor.jpg";
 
   return (
     <section className="relative pt-24 pb-12 md:pt-32 md:pb-20 overflow-hidden bg-background">
@@ -51,16 +51,13 @@ export function Hero() {
         <div className="relative group mt-8 lg:mt-0 max-w-md mx-auto lg:max-w-none w-full">
           <div className="absolute inset-0 bg-primary/5 rounded-3xl -rotate-3 scale-105"></div>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] sm:aspect-[3/4]">
-            {heroImage && (
               <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
+                src={heroImage}
+                alt="heroImage"
                 fill
                 className="object-cover"
-                data-ai-hint={heroImage.imageHint}
                 priority
               />
-            )}
           </div>
           <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-left-6 bg-white p-4 md:p-6 rounded-2xl shadow-xl border border-border flex items-center gap-3 md:gap-4 max-w-[200px] md:max-w-[240px]">
             <div className="bg-primary/10 p-2 md:p-3 rounded-full shrink-0">

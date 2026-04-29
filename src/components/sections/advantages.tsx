@@ -4,7 +4,7 @@ import { Brain, Headphones, PenTool, Layout } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Advantages() {
-  const advantagesImg = PlaceHolderImages.find(img => img.id === 'advantages-img')?.imageUrl || "https://picsum.photos/seed/math-adv/800/800";
+  const advantagesImg = PlaceHolderImages.find(img => img.id === 'advantages-img')?.imageUrl || "/gambargemini.png";
 
   const points = [
     {
